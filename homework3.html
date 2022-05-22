@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *{padding: 0; margin: 0;}
+       ul,li,ol{list-style: none;}
+       a{text-decoration: none; color: inherit;}
+       header{position: relative;}
+       body{position: relative;}
+      .wrapper{
+                width: 800px;    
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%); }
+       .title{
+           background: url(images/main_img02.png) no-repeat;
+           height: 500px;
+           background-size: cover;
+       }
+       .title a{
+        position: relative;
+        left: 580px;
+        top: 10px;
+        }
+        .menu-list{ position: absolute; top: 30%; left: 50%; transform: translate(-50%);}
+        .menu-list li{
+        width: 300px; 
+        height: 40px; color: #fff; border-radius: 10px;
+        background-color: rgba(239, 10, 10, 0.8);
+        display: flex; justify-content: center; margin-bottom: 10px;}
+        .main{display: flex; flex-direction: column;}
+        .main-text{ margin-left: 10px;}
+        .main h2{display: flex; justify-content: center; margin-top: 10px;}
+        .main h3{display: flex; justify-content: flex-start;}
+        .main p{white-space:pre-line;}
+        .list-img{display: flex; flex-direction: column; align-items: center; margin: 10px;
+                  filter: grayscale(80%) brightness(70%) ; } 
+        .list-img>img{width: 30%; margin: 10px;} 
+        .footer{background-color: rgb(33, 33, 33); color: #fff; text-align: center;}
+        .footer address{font-style: normal; line-height: 50px;}
+
+   </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+                <h1 class="title">
+                    <a href="#">Nature Skin</a>
+                </h1>
+            <ul class="menu-list">
+                <li><a href="#">Nature Skin</a></li>
+                <li><a href="#">Guide Info</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Custom</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <div class="main-text">
+                <h2>About Nature Skin</h2>
+                <h3>lorem, ipsum dolor.</h3>
+                 <pre>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text     ever    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text     ever    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text     ever    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                 </pre> 
+            </div>
+              <div class="list-img">
+                <img src="images/subimg01.png">
+                <img src="images/subimg02.png">
+                <img src="images/subimg01.png">
+                <img src="images/subimg02.png">
+                <img src="images/subimg03.png">
+        </div> <!--list-img-->
+        </div> <!--main-->
+      <footer class="footer">
+    <address>&copy; Nature Skin.</address>
+    </footer><!--footer-->
+    </div>  
+</body>
+</html>

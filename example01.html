@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+  .flex-container{
+    background-color: rgb(117, 147, 223);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .flex-container>div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container>div>span{
+    display: block;
+    width: 80px; height: 80px; background-color: green;
+    line-height: 80px;
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div>
+    <span>center</span>
+  </div>
+</div>
+</body>
+</html>
